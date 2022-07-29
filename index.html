@@ -10,7 +10,50 @@
 </head>
 <body>
     
-    <h2>make some magic here!!</h2>
+    <form class="form-container" id="myForm">
+      <h1>Registration Form</h1>
+
+      <div class="personal-information">
+        <div>
+          <label for="username">Full Name</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Enter your Full Name"
+            required
+          />
+        </div>
+        <div>
+          <label for="email-address">Email Address</label>
+          <input
+            type="email"
+            id="email-address"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+        <div>
+          <label for="phoneNumber">Mobile Number</label>
+          <div class="input-logo">
+            <div class="input-container">
+              <input
+                type="tel"
+                id="phoneNumber"
+                placeholder="080********"
+                required
+              />
+            </div>
+            <div class="logo-container">
+              <img id="phone-icon" src="images/mobile-phone.png" alt="mobile phone">
+            </div>
+          </div>
+        </div>
+        <div class="submitField">
+          <input type="submit" id="submit-btn" />
+          <input type="reset" id="reset-btn" value="Cancel" onclick="resetFunction()"/>
+        </div>
+      </div>
+    </form>
 
     <!-- // ============= EEND DO NOT EDIT ============== // -->
     <script src="index.mjs" type="module"></script>
